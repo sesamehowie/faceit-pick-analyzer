@@ -1,4 +1,3 @@
-from tabulate import tabulate
 from src.api.open_api import OpenApi
 from data.models.models import Team, TeamIdentifier
 from data.config import CURRENT_MAP_POOL_LABELS
@@ -80,5 +79,4 @@ class Runner:
         print("Final results:\n")
 
         maps_wrs = list(wp_dict.items())
-        print(tabulate(maps_wrs, headers=["Map", "Winrate"], tablefmt="orgtbl"))
-        return True
+        return maps_wrs
