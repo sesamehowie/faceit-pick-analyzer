@@ -12,3 +12,5 @@ CURRENT_MAP_POOL_LABELS = [
     "Nuke",
     "Train",
 ]
+
+LOG_PATH = "logs"
