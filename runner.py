@@ -77,7 +77,7 @@ class Runner:
             res = calculate_win_probability(my_wr=my_wr, enemy_wr=enemy_wr)
             wp_dict |= {map: str(res) + "%"}
 
-        logger.success("Successful Run!")
+        logger.info("Successful Run!")
 
         maps_wrs = list(wp_dict.items())
         return maps_wrs
